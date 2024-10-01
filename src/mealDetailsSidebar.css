@@ -1,0 +1,48 @@
+.sidebar {
+    position: fixed; /* Keeps the sidebar in a fixed position */
+    top: 0; /* Aligns the sidebar to the top */
+    right: 0; /* Aligns the sidebar to the right */
+    width: 300px; /* Set the width of the sidebar */
+    height: 100%; /* Full height */
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    padding: 20px; /* Add padding for better spacing */
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+    z-index: 1000; /* Ensure it appears above other elements */
+    transition: transform 0.3s ease; /* Smooth transition for opening/closing */
+  }
+  
+  .sidebar button {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for the button */
+    cursor: pointer; /* Change cursor on hover */
+    margin-bottom: 20px; /* Margin below the button */
+  }
+  
+  .sidebar button:hover {
+    background-color: #0056b3; /* Darken button on hover */
+  }
+  
+  .sidebar img {
+    max-width: 100%; /* Make sure image fits within the sidebar */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space below the image */
+  }
+  
+  .sidebar h2,
+  .sidebar h3 {
+    margin: 10px 0; /* Spacing for headings */
+  }
+  
+  .sidebar ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+  }
+  
+  .sidebar li {
+    padding: 5px 0; /* Padding for list items */
+  }
+  
