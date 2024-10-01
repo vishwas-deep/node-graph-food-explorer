@@ -58,15 +58,9 @@ const App = () => {
     [],
   );
 
-
   const onConnect = useCallback(
-    (params) => setEdges((eds) => addEdge({ 
-      ...params, 
-      type: 'bezier', // Make the edge a bezier (curved) type
-      markerEnd: { type: 'arrowclosed' }, // Add an arrow at the target
-      style: { strokeWidth: 2, stroke: '#1a202c' }, // Custom style for the edge
-    }, eds)),
-    [],
+    (connection) => setEdges((eds) => addEdge(connection, eds)),
+    [setEdges],
   );
 
   return (
@@ -82,7 +76,6 @@ const App = () => {
         onConnect={onConnect}
         onNodeClick={handleNodeClick}
         fitView
-        edgeTypes={{ default: 'bezier' }} // Default edge type set to bezier
       >
         <Background />
         <Controls />

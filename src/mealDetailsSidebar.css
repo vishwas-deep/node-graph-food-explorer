@@ -1,48 +1,244 @@
 .sidebar {
-    position: fixed; /* Keeps the sidebar in a fixed position */
-    top: 0; /* Aligns the sidebar to the top */
-    right: 0; /* Aligns the sidebar to the right */
-    width: 300px; /* Set the width of the sidebar */
-    height: 100%; /* Full height */
-    background-color: #f8f9fa; /* Light background color */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-    padding: 20px; /* Add padding for better spacing */
-    overflow-y: auto; /* Allow scrolling if content exceeds height */
-    z-index: 1000; /* Ensure it appears above other elements */
-    transition: transform 0.3s ease; /* Smooth transition for opening/closing */
-  }
-  
-  .sidebar button {
-    background-color: #007bff; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px 15px; /* Padding for the button */
-    cursor: pointer; /* Change cursor on hover */
-    margin-bottom: 20px; /* Margin below the button */
-  }
-  
-  .sidebar button:hover {
-    background-color: #0056b3; /* Darken button on hover */
-  }
-  
-  .sidebar img {
-    max-width: 100%; /* Make sure image fits within the sidebar */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 15px; /* Space below the image */
-  }
-  
-  .sidebar h2,
-  .sidebar h3 {
-    margin: 10px 0; /* Spacing for headings */
-  }
-  
-  .sidebar ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
-  }
-  
-  .sidebar li {
-    padding: 5px 0; /* Padding for list items */
-  }
-  
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar .close-btn {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.sidebar img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.sidebar button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.sidebar button:hover {
+    background-color: #0056b3;
+}
+
+.tags-container {
+    margin-bottom: 20px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 5px;
+}
+
+.meal-details {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.meal-details p {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    color: #3d3b3b;
+}
+
+.meal-details a {
+    color: #007bff;
+    text-decoration: none;
+    text-align: end;
+}
+
+.meal-details a:hover {
+    text-decoration: underline;
+}
+
+.instructions-box {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.instructions-box h3 {
+    margin-top: 0;
+}
+
+.instructions-box p {
+    margin: 0;
+    line-height: 1.6;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar .close-btn {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.sidebar img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.sidebar button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.sidebar button:hover {
+    background-color: #0056b3;
+}
+
+.tags-container {
+    margin-bottom: 20px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 5px;
+}
+
+.meal-details {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.meal-details p {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    color: #3d3b3b;
+}
+
+.meal-details a {
+    color: #007bff;
+    text-decoration: none;
+    text-align: end;
+}
+
+.meal-details a:hover {
+    text-decoration: underline;
+}
+
+.instructions-box {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.instructions-box h3 {
+    margin-top: 0;
+}
+
+.instructions-box p {
+    margin: 0;
+    line-height: 1.6;
+}
